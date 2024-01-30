@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Błąd 500</title>
+        <link rel="shortcut icon" hreflang="pl" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABfklEQVRYhe2Xv6rCMBTGv/6xaBdBFwcHQRCcBSf7EBUn0dXFV3DxJRwFH8DZwc3JzUUHRdxcRSylCpZzh3iJmrS3y73CJQdCk/TLd36chNJoBBA+GPonkwOAKZ3VNPakmOJ8a5LqIjRiBQYDIAxZ6/ejjY9HprleAcuSa1yXe41GUolYAcPg1HrMDpkm0xlGtEbXuVeE7uNnQAEoAAWgABSAAlAACuB3AZ7/GxMD+D7v53LyVaYJ2PbDQQeyWbnueT4IEgJsNrzfagHptLjKdTmApgGdjsRZB9ptPl6vpQCacDGxLGC7BUolNl6tgPEYOBxY0kYD6PWATIavud+ByQSYz4HLBSgWgW4XcBz2/nwGymXgdBIJiP2xvzbHIfI8io3bjWg4JPL9n3XNppjj0eQAAFG1SjSdEgXBq2EYEi2XDBIgqtWIFgs2/554NiOq1yOTE0DiFryHbQOVCpDPs1Lv9+xS8h6FAtOlUqzkux3gebHW8jPwx/HPP0QJ4gtAIQq2K4vqVAAAAABJRU5ErkJggg==" />
+        <style>
+            html {
+                height: 80%;
+            }
+            body {
+                text-align:left;
+                height:100%;
+                background: #F3F3F3;
+                font-size: 62.5%;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-right:10px;
+                margin-left:10px;
+                padding:0px;
+            }
+            #container{
+                max-width: 1090px;
+                margin: auto;
+            }
+            body,td,th {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 9pt;
+                color: #333333;
+            }
+            h1,h2,h3,h4,h5,h6 {
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+            }
+            h1 {
+                font-size: 12rem;
+                font-weight:bold;
+                line-height: normal;
+                color: #ed2224;
+                margin:1rem auto;
+                text-shadow:3px 3px 5px #BBBBBB;
+            }
+            a:link,a:visited,a:hover,a:active {
+                color: #ed2224;
+                text-decoration:none;
+            }
+            ol{
+                color:#ed2224;
+                font-size: 24px;
+                font-weight:bold;
+                text-shadow:3px 3px 5px #BBBBBB;
+            }
+            ol p{
+                color:#CCCCCC;
+                font: normal 12pt Verdana, Arial, Helvetica, sans-serif;
+                color: #4c4c4c;
+            }
+            .content{
+                background-color: #fff;
+                border:solid 1px rgb(204, 204, 204);
+                margin: 10px 0;
+                text-align: center;
+                padding: 0 20px 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                min-height: 90%;
+            }
+            .header_logo {
+                display:block;
+                max-width:263px;
+                max-height:70px;
+                padding-bottom: 1rem;
+            }
+            .header_logo img {
+                width:100%;
+                height:100%;
+            }
+            .poweredbox {
+                font-family: Geneva, Arial, Helvetica, sans-serif;
+                color:#4c4c4c;
+                padding-left: 15px;
+            }
+            span{
+                color: #ed2224;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <a class="header_logo" href="https://www.webd.pl/?partner=e500" target="_blank">
+                <img style="margin:0.5rem" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAABTCAYAAACSw8LyAAAQUUlEQVR4Ae3dZXQbR/uw8THbYX7SMDvovmF0yszcUJmZKWVmZmbmNlAKM3Ne12GOnZgZNP/rw37w2VPvLcm7khzNnvN7sNXdkXavCHeV2dzbDnbr8V8S0QqdcTjOw814EC/gfXyGd/EcHsBNOBP90REtEA8FAJ5uZjPbqaeeKoM3MyN/NoKNQ3MMxfX4DMuRjwpUWqpgV1nDASzAe7gMaWgMZQlu3d7zbF8Ng6iOQ7qDUejs0QHaFMMcZo9GW49mt8Zwh9lj0AQKgUahBc7Gm9gM7RIf1uI5HIsGUBZ/190AaRiL9DoajSEYgF7oiBQoG7cfuxQMQLpLxmAY0pCKzmgKEwkWneFgFW7y6AAdgjn4t5bZa3GuR7NPwzyH2esxCAqBhGEw3kYOtIe241F0grKI60YPfIZNyKijDViBefgLP+Mt3IVzkYYEKItbj11nfOzKGoCNWIUF+Ae/4UM8iIkYgSZRGQoWqh2U4XGPDtCx2OswuwpXejR7ArIcZldjDBTEMCAB47EIOkRKMQWjEAsFad39MBfaQ9XYgyV4B6ejMZSlro9dT8yADoEDWIOvcRnaQlmiPg4leNTDOOxymF2OKzyaPV4IUwVGQ0EKQywmYBt0GCzGQMRAWndfzIYOER924nechCQoS13i8Dd0iGVjHq6yP5MwcTBx+K8wxOBkZEIHqRpV8EEHwYcZ6A6FsMVBsBsPoDWUJSLjIMjBh+iJ2NrWYeJg4tAHC6H9VIF92IYMLMaP+BzTsRqZ2I6cAG/3Y6RAIfLiAJTge3Sut3EAKrAYo6AsJg7RHAdbGJJwH3zQgipk4G2cgn5oiQTE15CM9hiMy/EbsqAh2YPTIjoOQDk+RVso1L84AD7MxQATB/tm4nA4NkELtuFVpCMeysbpC1QtMAk/o1SY48OPaFrHOORhG7YKdqIAOgjFeBaNoRB8HOQ1SLYjBz7oAFXje3SCgomDMnFIxL2ognawCeORAGUJ5gtVh+FFlAnztuIkKAQbh69xFk7GKQ7OwKW4C8/hU/wL7ae9OM+jOHyP08U1AKdhEm7Fk3gPSwOIRSnuQSxMHJSJQyPMEF5S5OBWxEGOghyJdvhOmFmOB+sYh0cQDxWAOLREOl5BNjQk36ItFNyMw1NQQWqKgZgcQOyW4P9BIcrjYOLQG/ugHcxAq0DDIATiSBwQ5n6NxnWIw2NIQbBfZ26GE/AXfJCe/o/zIA7PIB51+Vp2MobgHVQJ83y4F4nRHQcThxiMRyF0LUrwaOBhEOPQHtOhHSzAAO/jIB5go5EBLXgRDcMWB3ktPfE7tGAKukAhSuNg4hCLO1AivKQY50EcmuFVaAfrkO59HMSDKh7XoEiY9w96QSE8cZDXciK2CjP3YJSJg4nDU8Kbg3sxGG7/HDwBt0A72IKTQhUH4aBqiy+EeVk4MqxxkNeShMdRLcy9BLHRGwcThzi8hwroWmSihetxAM6CdrAP54YnDrZ5wE3QgvPCHgd5HWdgpzD3STSK7jiYOHwtfIy5BMkexeFoFAkvaSZGUBzOR7Yw80rEhjUO8tyhWC7MfQvNozsOJg7fOsTBh4VI9uhMU0chH7oWuZgU7jjYHuf1wsy7kBThcWiP6cLcr9HaxMG/zcTBxKE3Zgkzn0CjCI9DLD4X5k5HOxMH/zYTBxOHLvhDmPksmkR0HIAPhLkz0N7Ewb/NxMHEoTOkODxn4hB5m4mDiYOJg7zV3ziYOJg4mDiYOJg4mDiYOJg4mDiYOJg4mDiYOJg4mE8rGkdXHEwcTBxMHPphnjDzITSIrjiYOJg4mDgcjf8vzLwWcSYOJg4mDod8HKx5wDjkCDPPhYquOJg4mDiYONwCaR87PgriYOJg4mDiUCMMbSCdzyETw615Jg4mDiYOh2gc7CedvRj5wrxP0MbEwcTBxOHQjYM1A0AfLBFm5WEiVDTFwcTBxCEJygNhi4McBADt8TaqhVnT0S2a4mDiYOKwCI2Q4DKFYz2Ow6NIggpCC4zGLygX5mTjajkMJg4mDodKHICtuB03u+wGvI5SD+PwErqiLQ5z0AF9MBzHYQLewT74hBk5uAfJURYHEwcTB+95GId1+AZfCr7HHGSiGNpP+XgADYUwmDiEYzNxMHEIg3L8iSuEC+hGSRxMHEwcTByqMA9XogeUEIYoiYOJg4mDiYMP83EmGiEOyjxzsG7TBcHctrCZOJg4hEwFDmIWrsJhUJZoj0MMWqED2jtohzZojkaIhwIA+22jIdqhPTqgFeK9jYOJww/Qh2gcipGNLEiyUQgfNCQ+lGI6BkBZojkOjfEzCpHjYC+W4Ue8jMuQijgoi/22L8E25KIQv6G7t3Ew18q8F1MwLcSmYDEqPYzDL7gck3CRg0m4FPfibfyCOdgCLajGTAxHDBSiNQ5NbOvxVzUW4HK0ryUOVyMP2jILPb2Lg4mDQgKSkRJi8TghBF+CSoQKUDw64BS8iR3QgoUYAQUTh+CU4UO0gkKY42DiEE5HRtpvK+yhQDIuwBJoZ7Yd28ShAvPwNJ6t4SV8irkoss0txd2IDWMcTBwC36L0h1fAmZBeZuzH8VCWaI9DMR5DApItKWiINkjFpVhpm52Jo6Bg4hDxcTDnc0jCI6gUZr6J5jBxIA54EEpwni28ZXiqPsXBxMGcCSoV0sG8HwNh4kAc8BCkZ2Zx+BA+aMv39ScOJg4mDsDNyBfeeT8DMTXnmjiI9+2dKIC2zEErEwcTh0iOg33uScJ7Dz5cj8Sac00cxL93AvZBW1aif32Kg4mDiUN/rBDi8BQamDgEFIfzsQfasgYD61McTBxMHJpghhCHz9DUxCGwONj249X1Kw4mDiYOwI/C3D/QIvriYOJg4mDi8A2kA6tlFMTBxMHEwcTBNvtbEwcTBxMHEwcTBxMH89sKJyYOJg4mDtEVhxgMwsk4pRajEGviYOJg4hB9J3t5A1uw3Q7b8BOSTBxMHEIchwj4noOJw3fQDhaH4HJ4Jg4mDuOwD9qyCmkmDuZamSYO5rcVNyEX2jIPbU0cTBxMHEIUB24nYuLA/w4Ar6AS2vJrFPwq08TBfAnKxEEwCquhLZV4NfLjYOKwAMlwNwzAUcirh3H4WZg7HS0iPA6fSl8BRzsX4nA/lB0aoCNOtWb5oC27cVYoTxNX7GEc0qU44HIoRFocvqg1DsBKD+NwrHAh3YMYH2FxaI5Zwg+vvkGzCI5Da/wuzP0ObVw4h+QMTMYDNTyK1/CTfd9FJV5AsttxKBUO0FegPKjwsciDdnCjR3G4GgeFOAxyiMNbqICuxTa08ygO46Ad7MZZERaHAVgpxOFtNI7gOKRhkTD3XbQI8dmnfZiCzlBux2GncFGSXz2KwzhowZMePT18AuUOcwuQ6nDdiidQBl2L/RjrQRxScB+0g0wcF/44WDOBk7BZ2MGfDPf5HIQ1HI9MYe6zaOxxHHw1ZOI+9PLquhXLhTgsRnOXD9Bk3Ast+BRtwvDacRu6OcThdpRA1yIPV0DBnTAALfE+tIPVGBlhp4m7EXnCDn85EsIZB2ENV6FQmHsd4usYBx/KkG+Th91Ygh/wIAYjGcqrOExFNXQtNmAglIt3dku8By2YiVSXZ7fBNGHuMnTEfx2oMTgPBdC1KMPLiHE5Dl0wD9rBTPSMiLNPA+3wqzAzD0OhwhUHYQ0d8L20BhwJVcc4lOJN9ENaDalog+ZobI+CNdP1ODyBKuhaZOFSKBfv7F5YCi3YjeOgXJw/FuuFuZ+hJWo7ULtgN7SDVegFBTfiEINxKBXmvo+4cMXB9jgn4i7kCzNnoXO44iCsIQG3oUCYOQepUC5+lBkDQL5itidxOA4l0A5+w/+gXLjD43ELrCCJ3kJTKEtdZifjeVQLM69BgkMcGmIKqqFrUYJX0QzKEkQUAAzEQviElzM3QkXARW064DbshBY8gobhuuKVsIabsBtamolG/s+U4+Dn5mkcumAdtIN8PIJGwV86HcDJyIT20wFcj7g6zo3DxdLOihyMgXKIQwJuQCW0g1w8g65QABBAFBJwJKY7hgFYi4FQbHW5VmYSVJBaYRJ+RhG0IAMjoVyMw9OIhQpSS4zHT36uYROOhjrU4tAIj0ELsvEqDkeM/w8mgLa4HmuhA7QLj6AXVBCzO2MyNkELvkU7xzgAPbECWlCEGbgNnaD8FIeReAXroQVleBHxdYzD+xiNwRgiGI6TcAnuwUv4FdnQfnocKS7H4RMM93MNw2qs4W68iJ+RBe2nl2quIadbTwAHu/aw6a5Qb+KgMNjPg7YMa/AEeiIB8YhDbA1xNbTEZfgbudBBKsFi3IPOthmxiLHNjkdb3IIFKIAW7Me5UJD+VE/ANaiCliAf8/E0rsHpGIJ2aIYeGIsLcRs+wMYAbn8d+kDVMQ5Z2ID1EmzAVmShGDpAc5HmwVW2D4RwDYvt34mxwtCYx+F8gvAgHrBMJgxnIK4+xSERd6IqgAM1E3/jYzyOa3AOLsZkvIlfsQo50IIKlEELCrER0/E+HsGVOBuX4yG8i6lYh3xoP32AFlAQn/ajM36FDkApcrEPO5CJDGzBLmQj3+8oALm4CbFQbHIcwm89ToQKOg7h9y9Otj+TPsBjAKLf4xuUosiSn9O1x3tIDHccRLA/9f4KPmg/+VCJMhSjAEUoRQWqoSUox0d4ErlBzC6yzw5oHcB8DIdCIO8JDMdC6DApwlNoDFVP4pCBSbaDqr7FYRMmIs6+BisOHfCL7bGqIgyfISlMcZiNPohFgsRei36YAh1C1fgBndAIT6IQOoRWSR+ZCoE4AcuhQywfr6KFLQyRGocy/IMTEOt3GCIrDmWYgRMQD/sapDh8GsZnDhl4EFfhGon9xhSG4keUQ4fAn+gPZWmJl1AEHQLzcIa8o4qBOBI/ohQ6BDJwD1pCRXgcKrAazwrfZ4jkOFRiDZ5FF/saIj8OgavtHf6ueBjboT2Sg3eQBmXTGndiA7RHcvE2BonPGPwPREdMxhpoj+TgaxyDeCEM4Y5DFv7EfRhh/5O2DnH4BzpEsvEXJmMkEqDqEIfP7HHAPx7GId+NONgDkYST8QF2QLvEh0WYhBZQtYjHGHyMYpej9CMmolmwYRA+xRiBmzENBdAuWI8XcSbaQVkC2Vn64C9UocwFJcjBDmzEUvyGF3AtTkEPKAB1j0MPTHNxDaW2NSzDb3hRWoOwL7TH96hEmaUYH8Ieh2moRjlyMNmlOFyBLJSjLFAONwygFUbiHsxFLipQhWr4ANQMAFCNKlRiD77FVeiDGCiL0/z/4XS8grUohzUbtrm1zC7GajyP49BefqDrEAggFp1xDG7EO5iPAyhHhYNibMR3eAjnIg1NoAAgwJ2lAdIwFukuGIMRGIw09EEnNA4+COIaUjDAtTUAI91cg/XYJKEvxiLdMoZnE6mIrbGeONt6RqOTS3E4DKOQHgw5DhakoAPScD6ewRQsQQb2oAil2IXlmIoPcR3S0NrhaZn0z9AU3XEWXsZPmI9NKEAZsrEZK/EP3sTlGIouaCI/4G4GAkAiWqAjUjEQR+B0TMTFOAfHYTj6oRvaoCGUXRA7S1gI26G0BmEfAA4A4noQ9vvq/wC3hKSuJvnfRwAAAABJRU5ErkJggg==" alt="Webd.pl - Tani, Profesjonalny hosting WWW" /></a>
+            <div class="content" style="margin-top:1.5rem">
+                <h1>500</h1>
+                <p><b>Wewnętrzny błąd serwera – serwer napotkał niespodziewane trudności, które uniemożliwiły zrealizowanie żądania</b></p>
+                <p>Ten komunikat błędu może oznaczać błąd w kodzie strony lub brakujące dane dla strony np. plików wymaganych do działania</p>
+            </div>
+            <div class="poweredbox">
+                <p><strong>Hosting <a href="https://www.webd.pl/?partner=e500" target="_blank">Webd.pl</a></strong> - Tani, Profesjonalny Hosting WWW i Domeny</p>
+            </div>
+        </div>
+    </body>
+</html>

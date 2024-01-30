@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteRule ^profil/([0-9]+)$ profile.php?uid=$1
+RewriteRule imprezy imprezy.php
+RewriteRule lokale lokale.php
+RewriteRule pomoc pomoc.php
+RewriteRule wyloguj logout.php
+RewriteRule logowanie login.php
+RewriteRule rejestracja register.php
+RewriteRule resetowanie-hasla passreset.php
+RewriteRule ustawienia usersettings.php
+RewriteRule ^impreza/([0-9]+)$ party.php?pid=$1 
+RewriteRule dodaj-impreze addpartynew.php
+RewriteRule weryfikacja acc_verify.php
+RewriteRule rodo rodo.html
+RewriteRule polityka-prywatnosci privacypolicy.html
+RewriteRule regulamin regulamin.html
+RewriteRule email-zmiana emailchange.php
+RewriteRule canceled canceled.php
+RewriteRule success success.php
+RewriteRule premium premium.php
+
